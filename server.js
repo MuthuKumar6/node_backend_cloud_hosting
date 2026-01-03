@@ -19,7 +19,7 @@ app.get("/api/health", (req, res) => {
 });
 
 // Optional: A simple POST test endpoint
-app.post("/api/test", (req, res) => {
+app.get("/api/test", (req, res) => {
   const data = req.body;
   res.json({
     message: "POST request received successfully!",
