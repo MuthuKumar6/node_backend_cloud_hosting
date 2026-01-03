@@ -28,4 +28,4 @@ COPY . .
 EXPOSE 5000
 
 # Start command
-CMD ["node", "server.js"]  # Replace with your start script, e.g., "npm start"
+CMD ["node", "server.js"]
