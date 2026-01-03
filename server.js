@@ -22,7 +22,7 @@ app.get("/api/health", (req, res) => {
 app.get("/api/test", (req, res) => {
   const data = req.body;
   res.json({
-    message: "POST request received successfully!",
+    message: "POST request received!",
     receivedData: data,
     timestamp: new Date().toISOString(),
   });
