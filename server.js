@@ -18,6 +18,16 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// Optional: A simple POST test endpoint
+app.post("/api/test", (req, res) => {
+  const data = req.body;
+  res.json({
+    message: "POST request received successfully!",
+    receivedData: data,
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.listen(5000, () => {
   console.log("Backend running on port 5000");
 });
